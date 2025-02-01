@@ -35,18 +35,9 @@ public class ScapeshipController : MonoBehaviour
         shootTimer = 0.0f;
 
 
-        SpawnBall();
+        SpawnStarship();
     }
 
-    private void Start()
-    {
-        //screenPixel = new Vector3(Screen.height/2, Screen.width/2, 0.0f);
-        //screenSize = Camera.main.ScreenToWorldPoint(screenPixel);
-        
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         StarshipShoot();
@@ -56,11 +47,7 @@ public class ScapeshipController : MonoBehaviour
 
 
 
-
-    /// <summary>
-    /// Spawn a ball and attaches it to the pivot using SpringJoint2D
-    /// </summary>
-    private void SpawnBall()
+    private void SpawnStarship()
     {
         currentSpaceship = Instantiate(prefabStarship, new Vector3(0, -4.0f, 0), Quaternion.identity);
 

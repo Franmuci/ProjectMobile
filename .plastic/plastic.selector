@@ -1,4 +1,3 @@
-repository "ProjectMobile/ProjectMobile@1375665028815@cloud"
+rep "ProjectMobile/ProjectMobile@1375665028815@cloud"
   path "/"
-    br "/main"
-    co "/main"
+    smartbranch "/main"
